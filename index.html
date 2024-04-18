@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="qr-code-content">
+        <div class="form-info">
+            <div class="header">
+                <h1>QR Code Generator</h1>
+                <h2>Enter your Url you want to generate QR Code</h2>
+            </div>
+            <div class="form-area">
+                <input type="text" name="url" class="url" placeholder="Enter the URL">
+                <input type="text" name="size" class="size" placeholder="QR Size">
+                <select name="charset-source" class="charset-source">
+                    <option value="ISO-8859-1">ISO-8859-1</option>
+                    <option value="UTF-8">UTF-8</option>
+                </select>
+                <select name="ecc" class="eye">
+                    <option value="L">Low (L)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="Q">Quality (L)</option>
+                    <option value="H">High (H)</option>
+                </select>
+
+                <input type="text" name="color" class="color" placeholder="Color">
+                <input type="text" name="bgColor" class="bgColor" placeholder="Background Color">
+                <input type="text" name="margin" class="margin" placeholder="Margin">
+                <input type="text" name="qzone" class="qzone" placeholder="Qzone">
+
+                <select name="format" class="format">
+                    <option value="png">PNG</option>
+                    <option value="gif">GIF</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="svg">SVG</option>
+                    <option value="eps">EPS</option>
+                </select>
+                <div class="btn-box">
+                    <button type="button" class="btn btn-generate">Generate</button>
+                    <button type="button" class="btn btn-clean">Clean</button>
+                    <button type="button" class="btn btn-download">Download</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="display-box">
+            <div class="qr-code">
+                <img src="default-preview-qr.svg" alt="preview">
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
